@@ -15,4 +15,12 @@
   height: 50px;
   border-radius: 50%;
  }
- 
+ .packagecontainer .packageboxcontainer{
+  display: flex;
+  flex-direction: column;
+  background-color:#28343D;
+  border-bottom-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem ;
+}
