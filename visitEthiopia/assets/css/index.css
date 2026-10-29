@@ -24,30 +24,27 @@
 
  }
  .headercontanier .topelements .textlogo{
-   font-size: 15px;
    font-family: Arial, Helvetica, sans-serif;
    font-variant: normal;
    color: white;
    padding: 7px;
-   font-size: large;
+   font-size: 15px;
    text-indent: 5px;
+  font-weight: bold;
+  
+  }
 
 
  
-
-
- }
  .headercontanier .topelements .imagelogo{
-   padding: 0;
+  padding: 0;
   margin: 25px 0 0 5px;
-
   
  }
  .headercontanier .topelements .imagelogo img{
    width: 60%;
    height:30px;
    margin-right: 30px;
-   
  }
  .headercontanier .navigationlinks{
    display: inline-flex;
@@ -157,6 +154,7 @@ cursor: pointer;
   grid-template-columns: 1fr 1fr 1fr;
   gap:2rem;
   padding: 2rem;
+  align-items: stretch;
   
 }
 
@@ -168,17 +166,20 @@ cursor: pointer;
   color: azure;
   font-weight: 700;
   text-decoration: none;
+  transition: box-shadow 0.3s ease;
 }
 .packagetitlecontainer a{
    text-align: center;
   color: azure;
   font-weight: 700;
   text-decoration: none;
+
 }
 
 
 .packagetitlecontainer a:hover{
   color: blanchedalmond;
+  
 }
 .packagecontainer .packageboxcontainer {
     display: flex;
@@ -186,6 +187,7 @@ cursor: pointer;
     background-color: #28343D;
     border: 2px solid transparent;
     border-radius: 2rem;
+     height: 100%;
     border-bottom-left-radius: 2rem;
     border-top-right-radius: 2rem;
    border-top-left-radius: 2rem;
@@ -253,31 +255,349 @@ font-variant: normal;
  margin: 0 0 20px 0;
   word-spacing: normal;
   letter-spacing: normal;
+  flex-grow: 1;
+
 
 }
-.packagecontainer .packageboxcontainer .packagereadercontainer{
-  border:2px solid black ;
-  background-color:#4B4A43;
+.packagecontainer .packageboxcontainer .packagereadercontainer {
+  border: 2px solid black;
+  background-color: #4B4A43;
   border-radius: 2rem;
+  width: 130px;
+  height: 45px;
+  margin: 15px auto;
+  display: flex;
   justify-content: center;
-   width: 80px;
-  height: 20px;
-  padding: 0;
-  margin:0 auto 0px;
+  align-items: center;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
-.packagecontainer .packageboxcontainer .packagereadercontainer a{
- 
+
+.packagecontainer .packageboxcontainer .packagereadercontainer a {
   color: #F2B24D;
- font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
   text-decoration: none;
-  text-align: center;
-  padding: 10px;
-  margin:0;
- /* padding: 10px;
-  margin-right: 70px ;*/
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.packagecontainer .packageboxcontainer .packagereadercontainer a:hover{
+
+.packagecontainer .packageboxcontainer .packagereadercontainer:hover {
   cursor: pointer;
-  color: darkgoldenrod;
+  background-color: darkgoldenrod;
+  border-color: #000;
+}
+
+
+
+
+.packagecontainer2{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:2rem;
+  padding: 2rem;
+  align-items: stretch;
+  
+}
+
+.packagecontainer2 .packagetitlecontainer2 {
+  grid-column: 1/4;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: azure;
+  font-weight: 700;
+  text-decoration: none;
+  transition: box-shadow 0.3s ease;
+}
+.packagetitlecontainer2 a{
+   text-align: center;
+  color: azure;
+  font-weight: 700;
+  text-decoration: none;
+
+}
+
+
+.packagetitlecontainer2 a:hover{
+  color: blanchedalmond;
+  
+}
+.packagecontainer2 .packageboxcontainer2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #28343D;
+    border: 2px solid transparent;
+    border-radius: 2rem;
+     height: 100%;
+    border-bottom-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+   border-top-left-radius: 2rem;
+   border-bottom-right-radius: 2rem ;
+   box-sizing: border-box;
+   transition: border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+.packagecontainer2 .packageboxcontainer2:hover {
+    border-color: #F2B24D;
+    box-shadow: 0 0 15px rgba(242, 178, 77, 0.35);
+}
+
+ .packagecontainer2 .packageboxcontainer2 .packageimagecontainer2{
+ /*padding: 3px;
+ margin: 20px;
+margin-right: 50px;
+ margin-top: 0px;*/ 
+    width: 90%;
+    height: 200px;
+    margin: 20px auto;       
+    box-sizing: border-box;
+    padding: 0;
+
+
+
+ 
+ }
+
+
+.packagecontainer2 .packageboxcontainer2 .packageimagecontainer2 img{
+   /*width: 100%;
+   height:100%;
+   margin: 30px;
+   border-radius: 50%;*/
+   width: 100%;
+    height: 100%;
+    /*object-fit: cover;*/
+   /* object-position: center;*/
+    /*display: block;*/
+    border-radius: 15px;
+    margin: 0;
+    box-sizing: border-box;
+       
+}
+.packagecontainer2 .packageboxcontainer2 .packageheadingcontainer2{
+color: burlywood;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 700;
+font-size: 10px;
+padding: 0 10px;
+margin: 0;
+text-align: center;
+font-variant: normal;
+
+
+}
+.packagecontainer2 .packageboxcontainer2 .packageparagraphcontainer2{
+  color:whitesmoke;
+  text-decolartion:none;
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:13px;
+  line-height: 25px;
+  padding: 0 10px;
+ margin: 0 0 20px 0;
+  word-spacing: normal;
+  letter-spacing: normal;
+  flex-grow: 1;
+
+
+}
+.packagecontainer2 .packageboxcontainer2 .packagerbooknowcontainer2 {
+  border: 2px solid black;
+  background-color: #4B4A43;
+  border-radius: 2rem;
+  width: 130px;
+  height: 45px;
+  margin: 15px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.packagecontainer2 .packageboxcontainer2 .packagerbooknowcontainer2 a {
+  color: #F2B24D;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.packagecontainer2 .packageboxcontainer2 .packagerbooknowcontainer2:hover {
+  cursor: pointer;
+  background-color: darkgoldenrod;
+  border-color: #000;
+}
+.registration {
+  width: 60%;
+  max-width: 700px;
+  margin: 0 auto 3px;
+  padding: 30px;
+  background-color: #28343D; 
+  border-radius: 2rem;
+  box-sizing: border-box;
+}
+
+.registration .registrationcontactus {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.registration .registrationcontactus a {
+  text-decoration: none;
+  color: azure;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.registration .registrationcontactus a:hover {
+  color: blanchedalmond;
+}
+
+.registration .registrationform {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.registration .registrationform input {
+  width: 100%;
+  padding: 15px 20px;
+  background-color: #222b34;
+  color:azure;
+  border: 2px solid #39434d;
+  border-radius: 12px;
+  font-size: 15px;
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: 500;
+}
+.registration .registrationform input:hover{
+   border-color: #F2B24D;
+}
+.registration .registrationform input::placeholder{
+  color: azure;
+  font-weight:400;
+}
+.registration .registrationtextarea {
+  margin-bottom: 15px;
+}
+
+.registration .registrationtextarea textarea {
+  width: 100%;
+  padding: 15px 20px;
+  background-color: #222b34;
+  color: white;
+  border: 1px solid #39434d;
+  border-radius: 12px;
+  font-size: 15px;
+  box-sizing: border-box;
+  resize: vertical;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+.registration .registrationtextarea textarea:hover{
+   border-color: #F2B24D;
+}
+.registration .registrationtextarea textarea::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
+    font-weight: 500;
+}
+
+.registrtionbutton {
+  /*display: block;*/
+  width: 40%;
+  height: 40%;
+  padding: 20px;
+  background-color: #F2B24D;
+  color: #000;
+  border: none;
+  border-radius: 25px;
+  margin: 25px auto 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.registrtionbutton:hover {
+  background-color: darkgoldenrod;
+  cursor: pointer;
+}
+footer{
+  background-color:black;
+  
+}
+.footergrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 8px;
+}
+.footergrid .field{
+ display: flex;
+ flex-direction: column;
+ gap:10px; 
+ padding: 10px;
+ margin:50px;
+
+}
+.footergrid .field h3{
+  color: #F2B24D;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+}
+
+.footergrid .field a{
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: white;
+  text-align: justify;
+  font-weight: 100;
+}
+.footergrid .field a:hover{
+ font-weight: 600;
+ color: azure;
+ font-family: Arial, Helvetica, sans-serif;
+}
+.lastfooterinfo{
+  background-color:black;
+  width: 100;
+  height: fit-content;
+  margin: 10 10 auto 10;
+}
+.footerend{
+  color: azure;
+  font-size: 17px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  padding: 10px;
+   margin: 10 5 90 5px;
+}
+.copyright{
+  color: azure;
+   font-size: 17px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  padding: 4px;
+  margin: 5 5 90 5px;
 }
